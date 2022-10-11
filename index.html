@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <head>
+  <title>Weimin Chen's Homepage</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-  <title>Weimin Chen's Homepage</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>
           </p>
           <p>
-            <b>Office: </b>Room QT405, Chow Yei Ching Building, PolyU, Hung Hom, Kowloon, Hong Kong, China
+            <b>Office: </b>Room QT404, Chow Yei Ching Building, PolyU, Hung Hom, Kowloon, Hong Kong, China
             <br />
             <b>Email: </b>cswchen[at]comp.polyu.edu.hk
             <br />
@@ -45,10 +45,65 @@
       <p>His research interests span blockchain security and software engineering, especially smart contract analysis,
         binary translation, fuzzing, and CUDA. He has published a few paper on top-tier venues (ISSTA /
         Sigmetrics).</p>
-
+        
+      <h2>News</h2>
+      <div style="width:1000px;overflow:hidden;">
+        <!-- </br> -->
+        <div id="content" style="height:55px;transition: height 0.2s;">
+          <ul>
+            <li> EthSema was rejected by ASPLOS'23 (four weak accepts and one reject). 2022.9
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-10 col-lg-8 col-xl-6">EthSema was earlly rejected by CCS'22. 2022.5
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-10 col-lg-8 col-xl-6">EthSema was earlly rejected by SEC'22. 2022.3
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-10 col-lg-8 col-xl-6">EthSema was earlly rejected by SEC'22. 2022.3
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-10 col-lg-8 col-xl-6">EthSema was earlly rejected by SEC'22. 2022.3
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-10 col-lg-8 col-xl-6">EthSema was earlly rejected by SEC'22. 2022.3
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-10 col-lg-8 col-xl-6">EthSema was earlly rejected by SEC'22. 2022.3
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="title" style="height:20px;" onclick="onTileClick()">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b><i><u>......</u></i></b>&nbsp&nbsp&nbsp
+        </div>
+      </div>
+        
       <hr />
       <h2>Publications</h2>
       <ul>
+        <li>
+          <b>EthSema: A Static EVM2eWASM Binary Translation Framework </b>.
+          <br />
+          [<a href="https://github.com/ethsema/ethsema-paper">Preview</a>]
+        </li>
+        <br />
         <li>
           <b>WASAI: Uncovering Vulnerabilities in Wasm Smart Contracts</b>.
           <br />
@@ -148,5 +203,8 @@
 
     gtag('config', 'UA-157385544-1');
   </script>
-
+  <script type="text/javascript">
+    var content = document.getElementById("content");
+    function onTileClick() {content.style.height = content.offsetHeight===150?55+'px':150+'px';}
+  </script> 
 </body>
